@@ -3,6 +3,8 @@ import sqlite3
 
 connection = sqlite3.connect("data.db")
 
+connection.row_factory = sqlite3.Row # this means sqlite3 gets rows instead of tuples
+
 def create_table():
     with connection:
         connection.execute(
@@ -17,4 +19,5 @@ def add_entry(entry_content, entry_date):
 
 
 def get_entries():
-    pass
+    cursor = connection.execute("SELECT * FROM entries;")
+    return cursor
