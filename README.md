@@ -9,5 +9,6 @@ Once you've git cloned it to your machine, cd into the directory and run with th
 ```
 $python3 app.py
 ```
+You should then have something like what is below to play with.
 
 ![alt text](https://github.com/jdm79/sqlite-terminal-app/blob/main/terminal_app.png?raw=true)
